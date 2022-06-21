@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Latin&display=swap');
+
+body {
+  background: linear-gradient(150deg, rgb(228, 245, 255) 9%, rgb(194, 194, 255) 51%, rgb(197, 245, 255) 91%);
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  gap: 20px;
+  min-height: 100vh;
+  margin: 0 20px;
+
+  font-family: 'Anek Latin', sans-serif;
+}
+
+@media (min-width: 768px) {
+  .App {
+    margin: 0 100px;
+  }
+}
+
+.btn-register {
+  background-color: rgb(106, 83, 127);
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  margin-top: 15px;
+  color: rgb(228, 245, 255);
+  cursor: pointer;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 12px;
+  width: min(75%, 500px);
+  padding: 20px;
+  background-color: rgb(106, 83, 127);
+}
+
+.form__info {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__label {
+  color: rgb(228, 245, 255);
+}
+
+.form__input {
+  border-radius: 5px;
+  background-color: rgb(228, 245, 255);
+  color: rgb(106, 83, 127);
+  outline: none;
+}
+
+.form__fullname {
+  gap: 4px;
+}
+
+.form__info-birthday {
+  align-self: center;
+  justify-self: center;
+  text-align: center;
+}
+
+.form__submit {
+  border: none;
+  border-radius: 2px;
+  background-color: rgb(228, 245, 255);
+  color: rgb(106, 83, 127);
+  width: 90px;
+  align-self: center;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+@media(min-width: 768px) {
+  .form__fullname {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  /* background: linear-gradient(150deg, rgb(228, 245, 255) 9%, rgb(194, 194, 255) 51%, rgb(197, 245, 255) 91%); */
+  background: transparent;
+  border-radius: 20px;
+  box-shadow: 5px 8px 15px 3px rgba(106, 83, 127, 0.441);
+
+  width: min(90%, 300px);
+  min-height: 200px;
+  padding: 10px;
+}
+
+.card__principal {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  margin-top: 20px;
+
+  height: 80%;
+  width: 90%;
+  gap: 15px
+}
+
+.card__name,
+.card__info {
+  margin: 0;
+  margin-left: 5%;
+  color: rgb(106, 83, 127);
+  word-spacing: 8px;
+  letter-spacing: 0.8px;
+}
+
+.info-icon {
+  font-size: 17px;
+}
+
+.card__buttons {
+  display: flex;
+  flex-direction: row;
+  justify-self: flex-end;
+  align-self: flex-end;
+  align-items: flex-end;
+  justify-content: flex-end;
+  gap: 5px;
+  height: 10%;
+}
+
+.card__btn {
+  border: none;
+  border-radius: 7px;
+  outline: none;
+  /* color: rgb(167, 115, 180); */
+  color: rgba(106, 83, 127, 0.775);
+  cursor: pointer;
+  font-size: 100%;
+}
