@@ -32,7 +32,7 @@ const UserForm = ({ getUsers, editUserById, editForm, handleSubmit, register, re
   }
 
   return (
-    <form onSubmit={handleSubmit(submit)} className='form'>
+    <form onSubmit={handleSubmit(submit)} className='form animate__animated animate__backInUp'>
       <div className='form__info form__fullname'>
         <label htmlFor="first_name" className='form__label'>First Name</label>
         <input type="text" id='first_name' {...register('first_name')} className='form__input' />
@@ -55,7 +55,7 @@ const UserForm = ({ getUsers, editUserById, editForm, handleSubmit, register, re
         <label htmlFor="birthday" className='form__label'>Birthday</label>
         <input type="date" id='birthday' {...register('birthday')} className='form__input' />
       </div>
-      <button className='form__submit'>Submit</button>
+      <button className='form__submit'>SUBMIT</button>
     </form>
   )
 }

@@ -19,9 +19,9 @@ const CardUsers = ({ user, deleteUser, setEditForm, setVisibilityForm, reset}) =
     return (
         <article className='card'>
             <div className='card__principal'>
-                <h3 className='card__name'> <i className="fa-solid fa-user info-icon"></i> {`${user?.first_name} ${user?.last_name}`} </h3>
-                <p className='card__info'> <i className="fa-solid fa-envelope info-icon"></i> {user?.email} </p>
-                <h4 className='card__info'> <i className="fa-solid fa-calendar-day info-icon"></i> {user?.birthday} </h4>
+                <h3 className='card__name'> {`${user?.first_name} ${user?.last_name}`} </h3>
+                <p className='card__info card__info-email'> <i className="fa-solid fa-envelope info-icon"></i> {user?.email} </p>
+                <h4 className='card__info card__info-birthday'> <i className="fa-solid fa-calendar-day info-icon"></i> {user?.birthday} </h4>
             </div>
 
             <div className='card__buttons'>
