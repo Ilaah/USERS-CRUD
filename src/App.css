@@ -76,7 +76,27 @@ body {
 }
 
 .form__fullname {
-  gap: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4px;
+  
+}
+
+.first__name, .last__name {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+
+.first__name, .last__name {
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+  gap: 1px;
+}
 }
 
 .form__info-birthday {

@@ -34,11 +34,15 @@ const UserForm = ({ getUsers, editUserById, editForm, handleSubmit, register, re
   return (
     <form onSubmit={handleSubmit(submit)} className='form animate__animated animate__backInUp'>
       <div className='form__info form__fullname'>
-        <label htmlFor="first_name" className='form__label'>First Name</label>
-        <input type="text" id='first_name' {...register('first_name')} className='form__input' />
+        <div className='first__name'>
+          <label htmlFor="first_name" className='form__label'>First Name</label>
+          <input type="text" id='first_name' {...register('first_name')} className='form__input' />
+        </div>
 
-        <label htmlFor="last_name" className='form__label'>Last Name</label>
-        <input type="text" id='last_name' {...register('last_name')} className='form__input' />
+        <div className='last__name'>
+          <label htmlFor="last_name" className='form__label'>Last Name</label>
+          <input type="text" id='last_name' {...register('last_name')} className='form__input' />
+        </div>
       </div>
 
       <div className='form__info'>
